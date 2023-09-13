@@ -50,8 +50,8 @@ This is a readme that details the process of cleaning a dataset related bike sal
 - Added the now cleaned data to a pivot table.
 
 # Insights
-- Marital Status 
-- Children
+
+
 - Age
 - Cars
 - commute
