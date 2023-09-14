@@ -47,12 +47,27 @@ This is a readme that details the process of cleaning a dataset related bike sal
 
   # Building the dashboard
 
-- Added the now cleaned data to a pivot table.
+- Added the now cleaned data to pivot tables, each representing the following insights:
 
 # Insights
 
+### Age: Pie Chart
+#### Middle aged people (40-64) are the demographic with the most sales, at 52%. While the elderly (65+) are the lowest, at 4%. People in their thrties are second highest at 37%.
+ This is likely because middle aged people tend to require cars less for commuting since they're likely retired, so the bicycle presents itself as an affordable vehicle that also improves their fitness.
 
-- Age
-- Cars
-- commute
-- region
+### Number of Owned Cars: Column Chart
+#### People with just one care or none tend to buy the most bikes. And the higher the number of cars the less likely they are to buy a bike.
+  People who are wealthy enough to afford 2 or more cars are less likely to search for more affordable means of transportation.
+
+### Commute Distance: Line Chart
+#### The longer the customer's commute distance, the less likely they are to get a bike.
+ The cons of the bicycle start to outshin by the pros with more distance. but surprsingly, more bicycles were purchased by those in the 2-5 mile bracket than those in the 1-2 mile bracket. The 0-1 mile bracket reigns supreme of course.
+
+ ### Income: Column Chart
+ #### People who bought bikes have slightly higher average income than those who don't.
+
+### Region : Bar Chart
+#### North America has the highest bike sales at 220 bikes.
+
+# Recap
+We used Excel to clean a dataset related to bike sales in different regions, then made a simple dashboard, complete with some slicers.
