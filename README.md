@@ -20,16 +20,16 @@ This is a readme that details the process of cleaning a dataset related bike sal
 
 - Changed age column values into age brackets, our visualizations will be quite messy otherwise. 
   - This is done through an **XLOOKUP()** function. We make a lookup table, first column (lookup array) has the starts and ends of each range, and the second column has the groups themselves (return array).
-  - We make both arrays fixed so Auto Fill doesn't break them
-  - Match mode is to select lowest matching value.
+  - We make both arrays fixed so that Auto Fill doesn't break them.
+  - Match mode is to select the lowest matching value.
         
         =XLOOKUP(L2,$P$5:$P$10,$Q$5:$Q$10,,-1)
-  - We copy the values into the original age column so they're actual values, not results of a formula.
+  - We copy the values into the original age column so that they're actual values, not results of a formula.
   
 
 - Used **Data Validation** to ensure columns that only support a few values will not contain anything other than those values, ensuring that our data will stay clean even down the line:
   - Married Status can only be "S" for single or "M" for married.
-  - Home Owner column will only accept "Yes" and "No".
+  - Homeowner column will only accept "Yes" and "No".
   - Ditto with the Purchased Bike column.
   <p> &nbsp; </p>
 
@@ -52,8 +52,8 @@ This is a readme that details the process of cleaning a dataset related bike sal
 # Insights
 
 ### Age: Pie Chart
-#### Middle aged people (40-64) are the demographic with the most sales, at 52%. While the elderly (65+) are the lowest, at 4%. People in their thrties are second highest at 37%.
- This is likely because middle aged people tend to require cars less for commuting since they're likely retired, so the bicycle presents itself as an affordable vehicle that also improves their fitness.
+#### Middle aged people (40-64) are the demographic with the most sales, at 52%. While the elderly (65+) are the lowest, at 4%. People in their thirties are second highest at 37%.
+ This is likely because middle-aged people tend to require cars less for commuting since they're likely retired, so the bicycle presents itself as an affordable vehicle that also improves their fitness.
 
 ### Number of Owned Cars: Column Chart
 #### People with just one care or none tend to buy the most bikes. And the higher the number of cars the less likely they are to buy a bike.
@@ -61,7 +61,7 @@ This is a readme that details the process of cleaning a dataset related bike sal
 
 ### Commute Distance: Line Chart
 #### The longer the customer's commute distance, the less likely they are to get a bike.
- The cons of the bicycle start to outshin by the pros with more distance. but surprsingly, more bicycles were purchased by those in the 2-5 mile bracket than those in the 1-2 mile bracket. The 0-1 mile bracket reigns supreme of course.
+ The cons of the bicycle start to outshine the pros with more distance. But surprisingly, more bicycles were purchased by those in the 2-5 mile bracket than those in the 1-2 mile bracket. The 0-1 mile bracket reigns supreme of course.
 
  ### Income: Column Chart
  #### People who bought bikes have slightly higher average income than those who don't.
